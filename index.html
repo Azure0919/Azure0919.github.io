@@ -64,9 +64,52 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-blog introduce" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-nginx-openresty-content-by-lua-file-404" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/02/16/blog%20introduce/" class="article-date">
+    <a href="/2020/02/19/nginx-openresty-content-by-lua-file-404/" class="article-date">
+  <time datetime="2020-02-19T07:39:21.000Z" itemprop="datePublished">2020-02-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/19/nginx-openresty-content-by-lua-file-404/">nginx openresty content_by_lua_file 404</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>配置好lua脚本如下错误:  </p>
+<ul>
+<li>nginx openresty content_by_lua_file 404错误:2020/02/10 19:18:59 [error] 21231#0: *63 failed to load external Lua file “/home/l/lua/content_lua.lua”: cannot open /home/l/lua/content_lua.lua: Permission denied, client: [ip], server: localhost, request: “POST /lua_server HTTP/1.1”, host: “[ip]+[port]”</li>
+</ul>
+<p>nginx配置文件里添加 </p>
+<p>user root root;</p>
+<p>即可</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/19/nginx-openresty-content-by-lua-file-404/" data-id="ck6t1iayq000048vqafq94a51" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-blog-introduce" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/16/blog-introduce/" class="article-date">
   <time datetime="2020-02-16T06:50:35.000Z" itemprop="datePublished">2020-02-16</time>
 </a>
     
@@ -78,7 +121,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/16/blog%20introduce/">blog introduce</a>
+      <a class="article-title" href="/2020/02/16/blog-introduce/">blog introduce</a>
     </h1>
   
 
@@ -109,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/16/blog%20introduce/" data-id="ck6rdkl8n0000zgvqda7pcc69" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/16/blog-introduce/" data-id="ck6t1ib0u000148vq8wrldjx0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -150,7 +193,11 @@
       <ul>
         
           <li>
-            <a href="/2020/02/16/blog%20introduce/">blog introduce</a>
+            <a href="/2020/02/19/nginx-openresty-content-by-lua-file-404/">nginx openresty content_by_lua_file 404</a>
+          </li>
+        
+          <li>
+            <a href="/2020/02/16/blog-introduce/">blog introduce</a>
           </li>
         
       </ul>

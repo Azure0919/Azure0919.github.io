@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-02-20T09:09:04.250Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>NineEr</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nginx openresty content_by_lua_file 404</title>
+    <link href="http://yoursite.com/2020/02/19/nginx-openresty-content-by-lua-file-404/"/>
+    <id>http://yoursite.com/2020/02/19/nginx-openresty-content-by-lua-file-404/</id>
+    <published>2020-02-19T07:39:21.000Z</published>
+    <updated>2020-02-20T09:09:04.250Z</updated>
+    
+    <content type="html"><![CDATA[<p>配置好lua脚本如下错误:  </p><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line">nginx openresty content_by_lua_file 404错误:2020/02/10 19:18:59 [error] 21231#0: *63 failed to load external Lua file "/home/l/lua/content_lua.lua": cannot open /home/l/lua/content_lua.lua: Permission denied, client: [ip], server: localhost, request: "POST /lua_server HTTP/1.1", host: "[ip]+[port]"</span><br></pre></td></tr></table></figure><p>nginx配置文件里添加 </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user root root;</span><br></pre></td></tr></table></figure><p>即可</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;配置好lua脚本如下错误:  &lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/spa
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>blog introduce</title>
+    <link href="http://yoursite.com/2020/02/16/blog-introduce/"/>
+    <id>http://yoursite.com/2020/02/16/blog-introduce/</id>
+    <published>2020-02-16T06:50:35.000Z</published>
+    <updated>2020-02-21T08:15:30.314Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>关于博客</p></blockquote><blockquote><p>Welcome to my blog ! I would appreciate your guidance .</p></blockquote><ul><li><p>记录程序媛技术与生活  </p></li><li><p>分享遇到的bug解决方案 以及分享生活有所感触的一切  </p></li><li><p>等我成长时会有技术分享  </p></li><li><p>欢迎同行技术交流 不对的地方还请多多赐教</p></li><li><p>博客搭建参考:<br><a href="https://blog.csdn.net/weixin_39879178/article/details/80319392" target="_blank" rel="noopener">https://blog.csdn.net/weixin_39879178/article/details/80319392</a></p></li><li><p>博客主题来自:<br><a href="https://github.com/Tomotoes/hexo-theme-tomotoes" target="_blank" rel="noopener">https://github.com/Tomotoes/hexo-theme-tomotoes</a>  </p></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;关于博客&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Welcome to my blog ! I would appreciate your guidance .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>

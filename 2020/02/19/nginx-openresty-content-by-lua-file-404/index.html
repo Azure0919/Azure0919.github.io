@@ -37,6 +37,8 @@
 </script>
 
 
+	<script src="//hm.baidu.com/hm.js?603abfa34cf92f933b64642d6222647a"></script>
+
 
     
     <meta name="description" content="配置好lua脚本如下错误:   12 nginx openresty content_by_lua_file 404错误:2020&#x2F;02&#x2F;10 19:18:59 [error] 21231#0: *63 failed to load external Lua file &quot;&#x2F;home&#x2F;l&#x2F;lua&#x2F;content_lua.lua&quot;: cannot open &#x2F;home&#x2F;l&#x2F;lua&#x2F;content_lu">
@@ -219,15 +221,33 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <p>配置好lua脚本如下错误:  </p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line">nginx openresty content_by_lua_file 404错误:2020/02/10 19:18:59 [error] 21231#0: *63 failed to load external Lua file "/home/l/lua/content_lua.lua": cannot open /home/l/lua/content_lua.lua: Permission denied, client: [ip], server: localhost, request: "POST /lua_server HTTP/1.1", host: "[ip]+[port]"</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line">nginx openresty content_by_lua_file 404错误:2020/02/10 19:18:59 [error] 21231#0: *63 failed to load external Lua file "/home/l/lua/content_lua.lua": cannot open /home/l/lua/content_lua.lua: Permission denied, client: [ip], server: localhost, request: "POST /lua_server HTTP/1.1", host: "[ip]+[port]"</span><br></pre></td></tr></tbody></table></figure>
 
 <p>nginx配置文件里添加 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user root root;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user root root;</span><br></pre></td></tr></tbody></table></figure>
 
 
 
 <p>即可</p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
         </div>
 
         <blockquote class="post-copyright">
@@ -547,7 +567,7 @@ $("#name").bumpyText();
 
 /* 网站运行时间 */
 setInterval(function () {
-	setTime("2020/2/16");
+	setTime("2020/2/2");
 }, 1000);
 
 /* 文章块的淡出 */
